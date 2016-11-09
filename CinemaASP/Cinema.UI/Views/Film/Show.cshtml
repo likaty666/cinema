@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Cinema.UI.Models.ViewModelFilm>
+
+@{
+    ViewBag.Title = "Show";
+    int temp = 0;
+    int id = 0;
+}
+
+<h2>Show</h2>
+<p class="clip">
+    <h4>  @Html.DisplayFor(p => Model.First().title)</h4>
+    <h4>  @Html.DisplayFor(p => Model.First().about)</h4>
+    <h4>  @Html.DisplayFor(p => Model.First().director)</h4>
+    <h4>  @Html.DisplayFor(p => Model.First().starring)</h4>
+</p>
+<div class="Simple">
+    @foreach (var item in Model)
+    {
+        if (temp == 0)
+        {
+            id = item.film_id;
+            
+        }
+
+        
+            <img class="myImage" src="@item.pathPhoto" width="350" height="350" />
+
+        temp++;
+    }
+</div>
+<br/>
+    <div>
+        <button type="button"
+                data-id="@id"
+                class="btn btn-primary book">
+            Booking
+        </button>
+    </div>
+
+@section scripts {
+    
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/jquery.bxslider.min.js"></script>
+    <link href="~/Scripts/jquery.bxslider.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $('.Simple').bxSlider({
+                minSlides: 2,
+                maxSlides: 2,
+                slideWidth: 360,
+                slideMargin: 10
+            });
+        });
+        $(function () {
+         
+            $('.book').click(function () {
+                var id = $(this).attr('data-id');
+                window.location = '/Film/Seanses/' + id;
+
+            });
+        });
+    </script>
+}

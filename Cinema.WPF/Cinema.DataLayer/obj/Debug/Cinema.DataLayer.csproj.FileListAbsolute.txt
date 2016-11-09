@@ -1,0 +1,10 @@
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\Cinema.DataLayer.dll.config
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\Cinema.DataLayer.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\Cinema.DataLayer.pdb
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\obj\Debug\Cinema.DataLayer.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\obj\Debug\Cinema.DataLayer.pdb
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.DataLayer\obj\Debug\Cinema.DataLayer.csprojResolveAssemblyReference.cache

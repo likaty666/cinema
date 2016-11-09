@@ -1,0 +1,10 @@
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\Cinema.Repository.dll.config
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\Cinema.Repository.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\Cinema.Repository.pdb
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\obj\Debug\Cinema.Repository.dll
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\obj\Debug\Cinema.Repository.pdb
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\Cinema.WPF\Cinema.Repository\obj\Debug\Cinema.Repository.csprojResolveAssemblyReference.cache

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Cinema.UI.Models.ViewModelFilm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        
+        string mylink = "/Film/Show/" + item.film_id;
+        <div id="dataListItem" class="col-xs-12 col-sm-6 col-md-4">
+
+            @*@if (item.pathPhoto == null)
+                {
+                <a href="@mylink" title="No photo">
+                    <img src="~/Img/NoPhoto.jpg" height="150" style="position: relative; top: 0; left: 0;" />
+                </a>
+            }*@
+            @if(item.pathPhoto!=null) {
+                if (item.isMain == true)
+                {
+                    <div class="slide">
+                        <a href="@mylink" title="Main photo">
+                            <img src="@item.pathPhoto" width="450" height="350" />
+                        </a>
+                        <br />
+                        <p class="clip">
+                            <h4>  @Html.DisplayFor(p => item.title)</h4>
+                        </p>
+                        </div>
+                        }
+
+                        }
+
+                        
+
+                    </div>
+                }
+</div>
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/jquery.bxslider.min.js"></script>
+<link href="~/Scripts/jquery.bxslider.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        
+        $('.row').bxSlider({
+           
+        });
+    });
+</script>

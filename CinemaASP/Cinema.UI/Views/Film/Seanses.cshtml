@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Cinema.UI.Models.ViewModelHall>
+@{
+    ViewBag.Title = "Seanses";
+}
+
+<h2>Seanses</h2>
+
+<style>
+    .messagePanel { 
+        margin-top:50px;
+         margin-left:55px;
+          width: 490px; height: 530px; }
+
+.seat {
+    
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: dotted 1px gray;
+    float: left;
+    border-radius: 8px;
+    
+}
+    .hall {
+    background-color:gainsboro;
+    width:auto;
+
+    }
+.clearfix { clear: both;}
+.available {
+    background-color: azure;
+}
+
+.hovering{
+	background-color: darkgray ;
+}
+.selected{
+    background-color: crimson;
+}
+    .scrn {
+    width:490px;
+    margin-top: 30px;
+    }
+</style>
+
+@foreach (var item in Model)
+{
+    <h4>  @Html.DisplayFor(p => item.name) Hall </h4>
+    <button value="@item.seats" onClick="sessionStorage.id='@item.ses_id'" id="@item.ses_id" class="btn btn-primary hall" data-hall="@item.seats"> @item.sesDate </button>
+    
+}
+
+<div class="btnS">
+  
+    <button class="btn-success cart" style="width:169px">Choose seat</button>
+</div>
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script>
+    $(function () {
+      var myid;
+      $(".hall").click(function (event) {
+          myid = $(this).attr('id');
+      });
+       
+        $('.cart').click(function () {
+          
+            window.location = '/Film/Seat/?ids=' + myid;
+        });
+    });
+   
+    </script>

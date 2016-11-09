@@ -1,0 +1,10 @@
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\Cinema.Repository.dll.config
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\Cinema.Repository.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\Cinema.Repository.pdb
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\EntityFramework.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\EntityFramework.xml
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\obj\Debug\Cinema.Repository.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Repository\obj\Debug\Cinema.Repository.pdb
+C:\Users\Екатерина\Documents\Visual Studio 2015\Projects\CinemaASP\Cinema.Repository\obj\Debug\Cinema.Repository.csprojResolveAssemblyReference.cache

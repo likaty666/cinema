@@ -1,0 +1,39 @@
+﻿<Window x:Class="Cinema.WPF.Pics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cinema.WPF.ViewModel"
+        mc:Ignorable="d"
+        Title="Pics" Height="564.476" Width="756.857">
+    <Window.DataContext>
+        <local:PicsViewModel></local:PicsViewModel>
+    </Window.DataContext>
+    <Grid>
+        <ListBox ItemsSource="{Binding Photoes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelP}" IsSynchronizedWithCurrentItem="True" x:Name="listBox1" HorizontalAlignment="Left"  Height="184" Margin="211,280,0,0" VerticalAlignment="Top" Width="343">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Padding="5,0,5,0" Text="{Binding pathPhoto, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ContentControl Margin="0,0,0,10" Content="{Binding Photoes}">
+            <ContentControl.ContentTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0">
+                        <Image Source="{Binding pathPhoto, UpdateSourceTrigger=PropertyChanged}"  x:Name="image" HorizontalAlignment="Left" Height="221" Margin="58,21,0,0" VerticalAlignment="Top" Width="626"/>
+                       
+                    </StackPanel>
+
+                </DataTemplate>
+            </ContentControl.ContentTemplate>
+
+        </ContentControl>
+        <Button x:Name="button8" Height="35" Content="Add" Command="{Binding Add}"   HorizontalAlignment="Left" Margin="76,489,0,0" VerticalAlignment="Top" Width="193" Click="button3_Click"/>
+        <Button x:Name="button9" Height="35" Content="Delete"  Command="{Binding Delete}" HorizontalAlignment="Left" Margin="476,489,0,0" VerticalAlignment="Top" Width="193" Click="button3_Click"/>
+
+    </Grid>
+</Window>

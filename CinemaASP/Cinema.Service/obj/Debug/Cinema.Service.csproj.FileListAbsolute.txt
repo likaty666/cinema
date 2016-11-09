@@ -1,0 +1,14 @@
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.Service.dll.config
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.Service.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.Service.pdb
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.DataLayer.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.Repository.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\EntityFramework.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.DataLayer.pdb
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\Cinema.Repository.pdb
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\EntityFramework.xml
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\obj\Debug\Cinema.Service.csprojResolveAssemblyReference.cache
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\obj\Debug\Cinema.Service.dll
+c:\users\екатерина\documents\visual studio 2015\Projects\CinemaASP\Cinema.Service\obj\Debug\Cinema.Service.pdb

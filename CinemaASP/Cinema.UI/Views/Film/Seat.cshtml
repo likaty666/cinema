@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Cinema.UI.Models.ViewModelSeat>
+
+@{
+    ViewBag.Title = "Seat";
+    var count = 0;
+    //var taken=[];
+    var row = 0;
+    var col = 0;
+    var c = 1;
+}
+
+<h2>Seat</h2>
+
+<style>
+    .messagePanel {
+        margin-top: 50px;
+        margin-left: 55px;
+        width: 490px;
+        height: 530px;
+    }
+
+    .seat {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: dotted 1px gray;
+        float: left;
+        border-radius: 8px;
+    }
+
+    .hall {
+        background-color: gainsboro;
+        width: auto;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .available {
+        background-color: azure;
+    }
+
+    .hovering {
+        background-color: darkgray;
+    }
+
+    .selected {
+        background-color: crimson;
+    }
+       .booked {
+        background-color: darkgrey;
+        
+    }
+
+    .scrn {
+        width: 490px;
+        margin-top: 30px;
+    }
+</style>
+
+
+
+@{
+    count = Model.First().seats;
+    row = count / 5;
+    col = count / row;
+
+}
+<div id="messagePanel" class="messagePanel">
+    @for (var i = 0; i < row; i++)
+    {
+        for (var j = 1; j <= col; j++)
+        {
+            foreach (var it in Model.Select(x => x.seat))
+            {
+                if (it == c)
+                {
+                    <div class="seat booked" id="@c">@c</div>
+                    c++;
+                }
+
+            }
+
+            <div class="seat available" id="@c">@c</div>
+                        c++;
+                        if (i == row - 1 && j == col - 1)
+                        {
+                <button class="scrn" disabled>Screen</button>
+        }
+            
+    }
+    }
+
+</div>
+<div class="btnS">
+    <button class="btn-success cart" style="width:169px">Send</button>
+    <div id="messagePanel" class="messagePanel">
+
+    </div>
+   
+</div>
+
+
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script>
+    $(function(){
+       
+        $(function () {
+            $('.seat').on('click', function () {
+
+                if ($(this).hasClass("selected")) {
+                    $(this).removeClass("selected");
+                } else {
+                    $(this).addClass("selected");
+                }
+
+            });
+
+            $('.seat').mouseenter(function () {
+                $(this).addClass("hovering");
+
+                $('.seat').mouseleave(function () {
+                    $(this).removeClass("hovering");
+
+                });
+            });
+        });
+
+        $('.cart').click(function () {
+            var ids = $(".selected").map(function (i, el) { return "id[" + i + "]=" + $(el).attr('id') }).toArray();
+            window.location = '/Film/Cart/?' + ids.join("&");
+            //window.location = '/Film/Seat/?ids=' + myid;
+        });
+    });
+
+
+</script>
